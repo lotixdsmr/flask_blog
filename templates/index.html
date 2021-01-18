@@ -8,5 +8,8 @@
 		<a>	
 		<span class="badge badge-primary">{{ post['created'] }}</span>	
 		<hr>
+		<a href="{{ url_for('edit', id=post['id']) }}">
+			<span class="badge badge-warning">Edit</span>
+		</a>	
 	{% endfor %}
 {% endblock %}
